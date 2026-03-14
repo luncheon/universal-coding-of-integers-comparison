@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+}
+
+html {
+  line-height: 1.2;
+}
+
+body {
+  background-color: #333;
+  color: #ddd;
+}
+
+table {
+  border-spacing: 0;
+  white-space: pre;
+  font-family: Yomogi, sans-serif;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  > tr > th {
+    border-bottom: 1px solid gray;
+    background-color: #333;
+  }
+}
+
+th,
+td {
+  padding: 0 0.5em;
+  text-align: right;
+}
+th {
+  font-weight: 400;
+}
+
+th:first-child,
+td:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #333;
+  border-right: 1px solid gray;
+}
+
+.shortest-code {
+  color: #6bf;
+}
