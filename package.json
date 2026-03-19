@@ -1,5 +1,5 @@
 {
-  "name": "integer-code-comparison",
+  "name": "universal-coding-of-integers-comparison",
   "version": "0.0.0",
   "private": true,
   "license": "WTFPL",
@@ -10,15 +10,15 @@
     "start": "node --run clean && rolldown -c src/rolldown.config.js -w"
   },
   "dependencies": {
-    "@luncheon/exponential-golomb-code": "^1.0.3",
-    "@luncheon/fibonacci-code": "^1.0.2",
-    "@luncheon/golomb-code": "^1.0.0",
+    "@luncheon/exponential-golomb-code": "^1.1.0",
+    "@luncheon/fibonacci-code": "^1.1.0",
+    "@luncheon/parity-step-code": "^1.0.0",
     "@luncheon/varint": "^1.0.1",
     "gridjs": "^6.2.0"
   },
   "devDependencies": {
-    "oxfmt": "^0.40.0",
-    "rolldown": "^1.0.0-rc.9",
+    "oxfmt": "^0.41.0",
+    "rolldown": "^1.0.0-rc.10",
     "typescript": "^5.9.3"
   }
 }

@@ -1,5 +1,5 @@
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "oxc.oxc-vscode",
-  "cSpell.words": ["golomb", "varint"],
+  "cSpell.words": ["cheaty", "collatz", "golomb", "varint"]
 }
