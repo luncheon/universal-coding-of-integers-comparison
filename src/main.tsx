@@ -1,3 +1,6 @@
+import { encodeEliasDelta } from "@luncheon/elias-codes/delta.js";
+import { encodeEliasGamma } from "@luncheon/elias-codes/gamma.js";
+import { encodeEliasOmega } from "@luncheon/elias-codes/omega.js";
 import { encodeExponentialGolomb } from "@luncheon/exponential-golomb-code";
 import { encodeFibonacci } from "@luncheon/fibonacci-code";
 import { encodeParityStep } from "@luncheon/parity-step-code";
@@ -12,6 +15,9 @@ const varintStringEncoder = (chunkSize: number) => (n: number) =>
 const encoders: [string, (n: number) => string][] = [
   ["Parity-Step", n => (n ? encodeParityStep(n).reduce((x, y) => x + y, "") : "-")],
   ["Fibonacci", n => (n ? encodeFibonacci(n).join("") : "-")],
+  ["Elias Gamma", n => (n ? encodeEliasGamma(n).join("") : "-")],
+  ["Elias Delta", n => (n ? encodeEliasDelta(n).join("") : "-")],
+  ["Elias Omega", n => (n ? encodeEliasOmega(n).join("") : "-")],
   ["Exp-Golomb-0", n => encodeExponentialGolomb(n, 0).join("")],
   ["Exp-Golomb-1", n => encodeExponentialGolomb(n, 1).join("")],
   ["Exp-Golomb-2", n => encodeExponentialGolomb(n, 2).join("")],

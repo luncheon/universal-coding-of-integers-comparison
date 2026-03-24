@@ -10,6 +10,7 @@
     "start": "node --run clean && rolldown -c src/rolldown.config.js -w"
   },
   "dependencies": {
+    "@luncheon/elias-codes": "github:luncheon/elias-codes",
     "@luncheon/exponential-golomb-code": "^1.1.0",
     "@luncheon/fibonacci-code": "^1.1.0",
     "@luncheon/parity-step-code": "^1.0.0",
@@ -17,8 +18,8 @@
     "gridjs": "^6.2.0"
   },
   "devDependencies": {
-    "oxfmt": "^0.41.0",
-    "rolldown": "^1.0.0-rc.10",
-    "typescript": "^5.9.3"
+    "oxfmt": "^0.42.0",
+    "rolldown": "^1.0.0-rc.11",
+    "typescript": "^6.0.2"
   }
 }
